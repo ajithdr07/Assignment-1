@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Catalog</title>
+
+    <style>
+      header {
+        text-align: center;
+      }
+
+      body {
+        background-color: rgb(245, 234, 234);
+      }
+
+      .products-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      }
+      .product {
+        border-radius: 10px;
+        padding: 10px 20px;
+        margin: 20px;
+        background-color: cornsilk;
+      }
+
+      .product:hover {
+        box-shadow: 0 1px 5px rgba(117, 115, 115, 0.3);
+      }
+
+      .product > img {
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+        mix-blend-mode: multiply;
+      }
+
+      .product-name {
+        font-weight: bold;
+      }
+
+      .product-price {
+        text-decoration: underline;
+      }
+
+      .product > button {
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        margin-left: 5px;
+        cursor: pointer;
+        border: 1px solid transparent;
+      }
+
+      .product > button:hover {
+        border: 1px solid black;
+      }
+
+      .product > button:active {
+        background-color: green;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Product Catalog</h1>
+    </header>
+
+    <main>
+      <section class="products-list">
+        <article class="product">
+          <img
+            src="https://m.media-amazon.com/images/I/41QbhV8nEnL._SX300_SY300_QL70_FMwebp_.jpg"
+            alt="redmi 13c mobile"
+          />
+          <p class="product-name">
+            Redmi 13C 5G (Starlight Black, 4GB RAM, 128GB Storage) | MediaTek
+            Dimensity 6100+ 5G | 90Hz Display
+          </p>
+          <span class="product-price">10,999 Rs</span>
+          <button>Buy Now</button>
+        </article>
+        <article class="product">
+          <img
+            src="https://m.media-amazon.com/images/I/315oQlfQ6WL._SY445_SX342_QL70_FMwebp_.jpg"
+            alt="iPhone 13"
+          />
+          <p class="product-name">Apple iPhone 13 (128GB) - (Product) RED</p>
+          <span class="product-price">54900 Rs</span>
+          <button>Buy Now</button>
+        </article>
+
+        <article class="product">
+          <img
+            src="https://m.media-amazon.com/images/I/81fVPmkBsIL._SX679_.jpg"
+            alt="Samsung Galaxy M131"
+          />
+          <p class="product-name">
+            Samsung Galaxy M13 (Aqua Green, 4GB, 64GB Storage) | 6000mAh Battery
+            | Upto 8GB RAM with RAM Plus
+          </p>
+          <span class="product-price">10,999 Rs</span>
+          <button>Buy Now</button>
+        </article>
+
+        <article class="product">
+          <img
+            src="https://m.media-amazon.com/images/I/41LR8VAZD2L._SX300_SY300_QL70_FMwebp_.jpg"
+            alt="Realme Narzo"
+          />
+          <p class="product-name">
+            realme narzo 60X 5G（Nebula Purple 6GB,128GB Storage ） Up to 2TB
+            External Memory | 50 MP AI Primary Camera | Segments only 33W
+            Supervooc Charge
+          </p>
+          <span class="product-price">14,499 Rs</span>
+          <button>Buy Now</button>
+        </article>
+
+        <article class="product">
+          <img
+            src="https://m.media-amazon.com/images/I/41QbhV8nEnL._SX300_SY300_QL70_FMwebp_.jpg"
+            alt="redmi 13c mobile"
+          />
+          <p class="product-name">
+            Redmi 13C 5G (Starlight Black, 4GB RAM, 128GB Storage) | MediaTek
+            Dimensity 6100+ 5G | 90Hz Display
+          </p>
+          <span class="product-price">10,999 Rs</span>
+          <button>Buy Now</button>
+        </article>
+
+        <article class="product">
+          <img
+            src="https://m.media-amazon.com/images/I/315oQlfQ6WL._SY445_SX342_QL70_FMwebp_.jpg"
+            alt="iPhone 13"
+          />
+          <p class="product-name">Apple iPhone 13 (128GB) - (Product) RED</p>
+          <span class="product-price">54900 Rs</span>
+          <button>Buy Now</button>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: monospace, "Courier New", Courier;
+  padding: 20px;
+}
+
+.introduction__bg-image {
+  height: 200px;
+  max-width: 100%;
+  background-size: cover;
+}
+
+.portfolio__links li {
+  margin: 5px;
+}
+
+.portfolio__links a {
+  color: white;
+}
+
+.contact-form {
+  padding: 10px;
+}
+
+.contact-form > div {
+  margin: 10px 0;
+}
+
+.contact-form input {
+  width: 400px;
+  padding: 7px;
+  max-width: 90%;
+}
+
+.contact-form textarea {
+  width: 400px;
+  max-width: 90%;
+  height: 100px;
+  min-height: 20px;
+  padding: 7px;
+}
+
+.send-btn {
+  padding: 10px 40px;
+  background-color: blue;
+  color: white;
+  font-family: monospace, "Courier New", Courier;
+  cursor: pointer;
+  letter-spacing: 3px;
+  border: transparent;
+  border-radius: 5px;
+}
+
+.send-btn:hover {
+  border: 1px solid white;
+}

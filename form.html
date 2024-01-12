@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+
+    <style>
+      form {
+        padding: 10px 20px;
+        background-color: #d90429;
+        width: 500px;
+        max-width: 90%;
+        margin: 100px auto;
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+      }
+
+      form > div {
+        margin: 10px;
+      }
+
+      label {
+        color: white;
+      }
+
+      input {
+        width: 95%;
+        padding: 10px;
+        outline: none;
+        border: 1px solid transparent;
+        margin-top: 3px;
+      }
+
+      textarea {
+        min-width: 95%;
+        max-width: 95%;
+        min-height: 50px;
+        max-height: 100px;
+        padding: 10px;
+        margin-top: 3px;
+        outline: none;
+        border: 1px solid transparent;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      input:focus,
+      textarea:focus {
+        border-bottom: 2px solid black;
+      }
+
+      button {
+        margin: 10px;
+        padding: 10px 20px;
+        background-color: white;
+        color: #d90429;
+        cursor: pointer;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      button:hover {
+        background-color: #d90429;
+        color: white;
+        border: 1px solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 style="text-align: center">Contact Form</h1>
+    </header>
+    <form action="#" method="post" autocomplete="off">
+      <div>
+        <label for="name">Name</label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your Name"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="email">Email</label><br />
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email address"
+          name="email"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="message">Message</label><br />
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Type your Message"
+          required
+        ></textarea>
+      </div>
+
+      <button>Send</button>
+    </form>
+  </body>
+</html>

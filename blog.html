@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+
+    <style>
+      .blog-post {
+        width: 80%;
+        border: 1px solid rgb(231, 227, 227);
+        border-radius: 10px;
+        padding: 10px;
+        margin: 0 auto;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .post-image {
+        width: 100%;
+        max-height: 300px;
+        object-fit: cover;
+      }
+
+      .user-details,
+      .comment-header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .user-image {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        object-fit: cover;
+      }
+
+      .user-name,
+      .user-name-comment {
+        text-decoration: none;
+        font-size: small;
+        color: rgb(72, 71, 71);
+      }
+
+      .post-title {
+        font-size: 56px;
+      }
+
+      .post-content,
+      .comment-content {
+        line-height: 30px;
+      }
+
+      .comments > article {
+        padding: 10px;
+        margin-left: 10px;
+      }
+
+      .user-image-comment {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .comment-date {
+        font-size: small;
+        color: rgb(72, 71, 71);
+      }
+
+      .comment-content {
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article class="blog-post">
+        <header class="article-header">
+          <img
+            src="https://community-cdn-digitalocean-com.global.ssl.fastly.net/vUuUtKqDrY9gAbaD2czK9KrN"
+            alt="HTML image"
+            class="post-image"
+          />
+          <div class="user-details">
+            <img
+              src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="user image"
+              class="user-image"
+            />
+            <a class="user-name" href="#">Alexander Hipp</a>
+          </div>
+          <p>Posted on Jan 04, 2024</p>
+          <h2 class="post-title">Hyper Text Markup Language</h2>
+        </header>
+        <p class="post-content">
+          The HyperText Markup Language or HTML is the standard markup language
+          for documents designed to be displayed in a web browser. It defines
+          the content and structure of web content. It is often assisted by
+          technologies such as Cascading Style Sheets (CSS) and scripting
+          languages such as JavaScript. <br /><br />
+          Web browsers receive HTML documents from a web server or from local
+          storage and render the documents into multimedia web pages. HTML
+          describes the structure of a web page semantically and originally
+          included cues for its appearance. HTML elements are the building
+          blocks of HTML pages. With HTML constructs, images and other objects
+          such as interactive forms may be embedded into the rendered page. HTML
+          provides a means to create structured documents by denoting structural
+          semantics for text such as headings, paragraphs, lists, links, quotes,
+          and other items. HTML elements are delineated by tags, written using
+          angle brackets. <br /><br />
+          Tags such as img and input directly introduce content into the page.
+          Other tags such as p and surround and provide information about
+          document text and may include sub-element tags. Browsers do not
+          display the HTML tags but use them to interpret the content of the
+          page. HTML can embed programs written in a scripting language such as
+          JavaScript, which affects the behavior and content of web pages. The
+          inclusion of CSS defines the look and layout of content. The World
+          Wide Web Consortium (W3C), former maintainer of the HTML and current
+          maintainer of the CSS standards, has encouraged the use of CSS over
+          explicit presentational HTML since 1997.[2] A form of HTML, known as
+          HTML5, is used to display video and audio, primarily using the canvas
+          element, together with JavaScript.
+        </p>
+
+        <hr />
+        <section class="comments">
+          <h3>Comments</h3>
+          <article class="comment-single">
+            <header class="comment-header">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1683121366070-5ceb7e007a97?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                class="user-image-comment"
+              />
+              <a href="#" class="user-name-comment">Getty</a>
+              <span class="comment-date">&bullet; 4min ago</span>
+            </header>
+            <p class="comment-content">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Aspernatur obcaecati quo, ex corporis omnis officiis enim itaque
+              recusandae at totam.
+            </p>
+          </article>
+          <article class="comment-single">
+            <header class="comment-header">
+              <img
+                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="campbell"
+                class="user-image-comment"
+              />
+              <a href="#" class="user-name-comment">Campbell</a>
+              <span class="comment-date">&bullet; 8min ago</span>
+            </header>
+            <p class="comment-content">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Aspernatur obcaecati quo, ex corporis omnis officiis enim itaque
+              recusandae at totam.
+            </p>
+          </article>
+          <article class="comment-single">
+            <header class="comment-header">
+              <img
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                class="user-image-comment"
+              />
+              <a href="#" class="user-name-comment">Jenny</a>
+              <span class="comment-date">&bullet; 1h ago</span>
+            </header>
+            <p class="comment-content">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Aspernatur obcaecati quo, ex corporis omnis officiis enim itaque
+              recusandae at totam.
+            </p>
+          </article>
+          <article class="comment-single">
+            <header class="comment-header">
+              <img
+                src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="alex supran"
+                class="user-image-comment"
+              />
+              <a href="#" class="user-name-comment">Alex Supran</a>
+              <span class="comment-date">&bullet; 1d ago</span>
+            </header>
+            <p class="comment-content">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Aspernatur obcaecati quo, ex corporis omnis officiis enim itaque
+              recusandae at totam.
+            </p>
+          </article>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
